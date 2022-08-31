@@ -1,0 +1,7 @@
+spring:
+   datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@w5b4dwbwgqndv0q3_high?TNS_ADMIN=/Users/kimmy/User2/EUNBI/Wallet_W5B4DWBWGQNDV0Q3
+    username: admin
+    password: "eb1227eb!!KKK"
+

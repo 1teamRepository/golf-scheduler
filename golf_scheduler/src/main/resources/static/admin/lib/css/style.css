@@ -1,0 +1,137 @@
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+    :root{
+        --orange: #FF5000;
+        --white: #fff;
+        --grey: #f5f5f5;
+        --black: #222;
+        --black2: #999;
+        --darkgrey: #4B4C4E;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    .menu_nav {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .menu_ul{
+        display: flex;
+        position: fixed;
+    }
+
+    .menu_li{
+        list-style: none;
+        margin: 20px 30px 0 0 ;
+        font-size: 20px;
+        color: var(--black2);
+        font-weight: bold;
+    }
+
+    .menu_li.selected{
+        color: var(--white);
+    }
+
+
+    body{
+        height: 170%;
+    }
+
+    .contents_body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contents_body .contents_container{
+        position: relative;
+
+    }
+
+    .contents_body .contents_container .contents_title{
+        color: var(--white);
+        font-size: 30px;
+    }
+
+
+    /* login.html */
+
+    .contents_login_box {
+        width: 310px;
+        height: 460px;
+        background-color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .login_div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login_title {
+        margin-top: 30px;
+    }
+
+    .login_box_button {
+        margin-bottom: 30px;
+    }
+
+    .login_div input{
+        border: 0;
+        background-color: rgba(255, 255, 255, 0) !important;
+        border-bottom: 1.5px solid black;
+        width: 240px;
+        margin-top: 15px;
+        outline-style: none;  /* 포커스시 발생하는 효과 제거를 원한다면 */
+        -webkit-appearance: none;  /* 브라우저별 기본 스타일링 제거 */
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+
+
+    .login_text {
+        width: 240px;
+        font-weight: bold;
+    }
+
+    .login_box_button button {
+        color: var(--white);
+        background-color: var(--darkgrey);
+        width: 80px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+
+    @media screen and ( max-width: 400px ) {
+
+        li.menu_li{
+        font-size: 20px;
+        }
+
+        .contents_body .contents_container .contents_title{
+        font-size: 30px;
+        }
+    }
